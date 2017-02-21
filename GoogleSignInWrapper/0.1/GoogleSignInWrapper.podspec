@@ -17,4 +17,6 @@ Pod::Spec.new do |s|
   s.module_name = "GoogleSignInWrapper"
   s.source_files = "GoogleSignInWrapper/*.{swift,h}"
   s.resources = "GoogleSignInWrapper/*.bundle"
+  s.vendored_frameworks  = 'GoogleSignInWrapper/*.framework'
+  s.frameworks = 'SystemConfiguration', 'SafariServices'
 end
